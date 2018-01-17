@@ -23,7 +23,7 @@ export default class App extends Component {
           <main>
             <Route exact path="/" component={ Home }/>
             <Route path="/about" component={ About }/>
-            <Route path="/portfolio/:id" component={ ViewPortfolioPiece }/>
+            <Route path="/works/:id" component={ ViewPortfolioPiece }/>
           </main>
         </ScrollToTop>
       </Router>

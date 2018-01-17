@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ScrollWatcher from '../assets/js/ScrollWatcher'
+import Typed from 'typed.js'
 
 import HeaderNav from './HeaderNav'
 import PortfolioPiece from './PortfolioPiece'
@@ -36,6 +37,23 @@ export default class Home extends Component {
     scrollWatcher.init()
       .onScrollStart((e) => this.onScrollStart(e))
       .onScrollEnd((e) => this.onScrollEnd(e))
+
+    let options = {
+      typeSpeed: 250,
+      showCursor: false,
+    }
+
+    let typed = new Typed(this.refs.name1, {
+        ...options,
+        startDelay: 3000,
+        strings: [ 'Root' ],
+        onComplete: ( self ) => {
+          new Typed( this.refs.name2, {
+            ...options,
+            strings: [ 'Studio' ]
+          })
+        }
+    })
 
   }
 
@@ -87,10 +105,9 @@ export default class Home extends Component {
           <div className="intro-copy-wrap">
 
             <div className="name-wrap">
-              <img src="logo.png" alt="Tyler Wolf" />
-            </div>
-            <div className="services-copy">
-              Data Viz / UX Design / Creative Developer
+              <span className="name" ref="name1"></span>
+              <br/>
+              <span className="name" ref="name2"></span>
             </div>
 
           </div>

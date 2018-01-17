@@ -6,10 +6,11 @@ export default class SparkleBall {
         if(id) this.id = id
 
         this.onWindowResize = function() {
+            let width = window.innerWidth - 15
 
-            this.camera.aspect = window.innerWidth / window.innerHeight;
-            this.camera.updateProjectionMatrix();
-            this.renderer.setSize( window.innerWidth, window.innerHeight );
+            this.camera.aspect = width / window.innerHeight
+            this.camera.updateProjectionMatrix()
+            this.renderer.setSize( width, window.innerHeight )
 
         }.bind(this)
 
@@ -27,9 +28,10 @@ export default class SparkleBall {
     }
 
     init( canvasId, wrapperClassName ) {
-        //
-        this.camera = new THREE.PerspectiveCamera( 27, window.innerWidth / window.innerHeight, 1, 3500 );
-        this.camera.position.z = 2000;
+        let width = window.innerWidth - 15
+
+        this.camera = new THREE.PerspectiveCamera( 27, width / window.innerHeight, 1, 3500 );
+        this.camera.position.z = 0;
         this.scene = new THREE.Scene();
         this.scene.background = new THREE.Color( 0xffffff );
         this.scene.fog = new THREE.Fog( 0x44ff44, 2000, 3500 );
@@ -155,14 +157,27 @@ export default class SparkleBall {
         //
         this.renderer = new THREE.WebGLRenderer( { antialias: false } );
         this.renderer.setPixelRatio( window.devicePixelRatio );
-        this.renderer.setSize( window.innerWidth, window.innerHeight );
+        this.renderer.setSize( width, window.innerHeight );
         this.renderer.gammaInput = true;
         this.renderer.gammaOutput = true;
         //
         this.canvas = document.getElementById( canvasId )
         this.canvas.appendChild( this.renderer.domElement );
         //
+
+        let coords = { z: 0 }
+
+        new TWEEN.Tween(coords)
+            .delay( 1000 )
+            .to({ z: 2000 }, 30000)
+            .easing(TWEEN.Easing.Quadratic.InOut)
+            .onUpdate(() => {
+                this.camera.position.z = coords.z
+            })
+            .start()
+
         window.addEventListener( 'resize', this.onWindowResize, false );
+
         if(wrapperClassName) {
             this.wrapper = document.getElementsByClassName( wrapperClassName )[0]
             this.wrapper.addEventListener( 'mousemove', this.onMouseMove, false)
@@ -182,11 +197,12 @@ export default class SparkleBall {
         this.animating = false
     }
 
-    animate() {
+    animate( time ) {
         requestAnimationFrame( () => this.animate() )
         if( !this.animating ) return
         // if(this.id) console.log(this.id)
         this.render()
+        TWEEN.update(time)
     }
 
     render() {

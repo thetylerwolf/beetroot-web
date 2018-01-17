@@ -1,5 +1,5 @@
 {
-  "name": "tylernwolf-src",
+  "name": "root-studio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,7 +12,8 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
     "three": "^0.87.1",
-    "tween.js": "^16.6.0"
+    "tween.js": "^16.6.0",
+    "typed.js": "^2.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
