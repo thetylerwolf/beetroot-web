@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import FontAwesome from 'react-fontawesome'
-
-import HeaderNav from './HeaderNav'
+import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import '../assets/css/About.css'
 
@@ -12,37 +9,97 @@ export default class About extends Component {
 
     return (
 
-      <div className="about-wrap">
+      <div className="about-section">
 
-        <HeaderNav
-          showBrand={ false }
-          location={ this.props.location }
-        />
+        <Grid fluid>
 
-        <div className="about-section">
+          <Row around="xs"  className="content-section">
+            <Col xs={ 10 }>
+              <h4 className="section-header">About</h4>
+            </Col>
+          </Row>
 
-          <div className="about-logo">
-            <Link to="/"><img alt="Tyler Wolf" src="logo.png" /></Link>
-          </div>
+          <Row around="xs">
+            <Col xs={ 10 }>
+              <h3 className="headline">We help businesses grow by expanding and improving their digital&nbsp;experience.</h3>
+            </Col>
+          </Row>
 
-          <p>
-            I am an experienced digital product professional.
-            Over the years, I have worked across User Experience Design,
-            Data Visualization Design and Front End development. I now
-            work freelance on data visualization (design + code) and
-            UX design projects.
+          <Row around="xs">
+            <Col xs={ 10 }>
+              <p className="section-description">
+                Success in todays digital world requires businesses to focus on the user
+                and address their needs. Root Studio designs and builds the great experiences
+                that attract and retain users, making your business indispensible in their eyes.
+                We do this by leveraging our experience building powerful software,
+                designing impactful experiences and establishing effective operational processes.
+                The end result is a product that resonates with your core business.
+              </p>
+            </Col>
+          </Row>
 
-            If you would like to work with me, contact me directly at
-            <Link to="mailto:tyler@tylernwolf.com"> tyler@tylernwolf.com</Link>.
-          </p>
+          <Row around="xs" className="content-section">
+            <Col xs={ 10 }>
+              <h4 className="section-header">Services</h4>
+            </Col>
+          </Row>
 
-          <div className="icon-container">
-            <Link to="https://twitter.com/tylernwolf"><FontAwesome name="twitter" /></Link>
-            <Link to="https://github.com/thetylerwolf"><FontAwesome name="github" /></Link>
-            <Link to="https://www.linkedin.com/in/tylernwolf"><FontAwesome name="linkedin" /></Link>
-          </div>
+          <Row center="xs">
 
-        </div>
+            <Col xs={ 10 } md={ 3 }>
+
+              <h3 className="services-title">Strategy</h3>
+
+              <ul className="services-list">
+                <li>Product Roadmapping</li>
+                <li>Technology Roadmapping</li>
+                <li>User Research</li>
+                <li>Market Research</li>
+              </ul>
+
+            </Col>
+
+            <Col xs={ 10 } md={ 3 }>
+
+              <h3 className="services-title">Design</h3>
+
+              <ul className="services-list">
+                <li>User Experience</li>
+                <li>Responsive Homepages</li>
+                <li>Mobile</li>
+                <li>Wearables</li>
+              </ul>
+
+            </Col>
+
+            <Col xs={ 10 } md={ 3 }>
+
+              <h3 className="services-title">Technology</h3>
+
+              <ul className="services-list">
+                <li>Product Development</li>
+                <li>Creative Code</li>
+                <li>Mobile Apps</li>
+                <li>AR/VR</li>
+              </ul>
+
+            </Col>
+
+          </Row>
+
+          <Row around="xs" className="content-section">
+            <Col xs={ 10 }>
+              <h4 className="section-header">Contact</h4>
+            </Col>
+          </Row>
+
+          <Row around="xs">
+            <Col xs={ 10 }>
+              <p className="email"><a href="mailto:hello@rootstudio.co">hello@rootstudio.co</a></p>
+            </Col>
+          </Row>
+
+        </Grid>
 
 
       </div>

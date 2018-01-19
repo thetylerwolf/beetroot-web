@@ -65,7 +65,7 @@ var portfolio = {
         'Mobile Game',
         'Design / Graphics Programming'
       ],
-      'lightText': true,
+      'lightText': false,
       'fit': true,
       'id': 'voxeldreams'
     },

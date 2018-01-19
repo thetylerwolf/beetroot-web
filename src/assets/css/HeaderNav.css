@@ -5,18 +5,31 @@
 .header-nav {
     position:fixed;
     height:55px;
+    box-sizing: border-box;
     width:100%;
     top:0;
     left:0;
     right:0;
-    padding:10px 10px 0;
+    padding:10px 10px 0 10px;
     z-index:1000;
     pointer-events:none;
 }
 
 .brand {
-    margin-top:20px;
+    position:absolute;
+    top:0;
+    left:0;
     pointer-events:auto;
+    font-size:20px;
+    padding: 23px 36px;
+}
+
+.brand a {
+    text-decoration: none;
+    color:#1a1a1a;
+    font-family: "Roboto", sans-serif;
+    font-weight:700;
+    letter-spacing:0.05em;
 }
 
 #logo {
@@ -33,8 +46,9 @@
 
 .toggle span {
     position:absolute;
-    right:36px;
-    top:27px;
+    top: 0;
+    right: 0;
+    padding: 27px 26px;
     letter-spacing: 3.2px;
     font-weight:700;
 }

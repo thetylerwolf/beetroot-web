@@ -9,3 +9,17 @@ body {
   padding: 0;
   font-family: 'Lato', sans-serif;
 }
+
+h3.headline {
+  font-weight:300;
+  font-size:24px;
+}
+
+h4.section-header {
+  font-size:20px;
+  /*font-weight:700;*/
+}
+
+.content-section {
+  margin-top:50px;
+}

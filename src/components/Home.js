@@ -3,21 +3,13 @@ import ScrollWatcher from '../assets/js/ScrollWatcher'
 import Typed from 'typed.js'
 
 import HeaderNav from './HeaderNav'
-import PortfolioPiece from './PortfolioPiece'
+import PreviousWork from './PreviousWork'
+import About from './About'
 
 import SparkleBall from '../assets/js/SparkleBall'
 import '../assets/css/Home.css'
-import portfolio from '../assets/js/portfolio.js'
 
 let scrollWatcher = new ScrollWatcher()
-
-let portfolioPieces = portfolio.entries.map(( entry, i ) => {
-  return (
-    <div className="piece-row" key={ i }>
-      <PortfolioPiece entry={ entry } />
-    </div>
-  )
-})
 
 export default class Home extends Component {
   constructor() {
@@ -43,7 +35,7 @@ export default class Home extends Component {
       showCursor: false,
     }
 
-    let typed = new Typed(this.refs.name1, {
+    new Typed(this.refs.name1, {
         ...options,
         startDelay: 3000,
         strings: [ 'Root' ],
@@ -64,10 +56,12 @@ export default class Home extends Component {
     if(window.scrollY > window.innerHeight) {
 
       this.sb.stopAnimation()
+      this.setState({ showBrand: true })
 
     } else {
 
       this.sb.startAnimation()
+      this.setState({ showBrand: false })
 
     }
 
@@ -115,11 +109,21 @@ export default class Home extends Component {
 
         </div>
 
-        <div className="home-portfolio-wrap">
+        <div className="home-about-wrap">
 
-          { portfolioPieces }
+          <About></About>
 
         </div>
+
+        <div className="home-recent-work-wrap">
+
+          <PreviousWork></PreviousWork>
+
+        </div>
+
+        <footer class="home-footer">
+          <div>Copyright 2018 Root Studio</div>
+        </footer>
 
       </div>
 

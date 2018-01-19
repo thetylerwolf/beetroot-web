@@ -1,53 +1,40 @@
-.about-wrap .about-section {
-  position:relative;
-  margin: 15% 0 0 40%;
-  width:25%;
-}
-
-.about-wrap .about-section a {
+.about-section a {
   color:#1a1a1a;
 }
 
-.about-section .icon-container a {
-  font-size:18px;
-  margin-right:0.4em;
-}
-
-.about-section .about-logo img {
-  width:100%;
-  margin-left:-100%;
-}
-
-.about-section .about-logo {
-  /*margin-bottom: 70px;*/
+.about-section {
+  padding-bottom:50px;
 }
 
 .about-section p {
-  /*text-align:justify;*/
+  font-weight:300;
+  line-height:1.5em;
+  letter-spacing:0.03em;
+}
+
+.about-section h3.services-title {
+  font-weight:300;
+  font-size:24px;
+  text-align:left;
+}
+
+.about-section ul.services-list {
+  padding:0;
+}
+
+.about-section ul.services-list li {
+  list-style: none;
+  line-height:1.8em;
+  font-weight:300;
+  letter-spacing:0.03em;
+  text-align: left;
+}
+
+.about-section .email {
+  font-size:28px;
+  text-align:center;
 }
 
 @media only screen and (max-width : 480px) {
-  .about-wrap .about-section {
-    position:relative;
-    margin: 100px 5%;
-    width:70%
-  }
 
-  .about-section .about-logo img {
-    width:70%;
-    margin-left:0;
-  }
-
-  .about-section .about-logo {
-    margin-bottom: 50px;
-  }
-
-  .about-section .icon-container {
-    margin-top:50px;
-  }
-
-  .about-section .icon-container a {
-    font-size:36px;
-    margin-right:0.4em;
-  }
 }

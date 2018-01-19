@@ -12,7 +12,6 @@ export default class HeaderNav extends Component {
     super( props )
 
     this.state = {
-      showBrand: !!props.showBrand,
       showMenu: false
     }
 
@@ -63,7 +62,7 @@ export default class HeaderNav extends Component {
         <header className="header-nav">
 
           {
-            this.state.showBrand ? <span className="brand"><Link to="/"><img id="logo" src="/logo.svg" alt="Tyler Wolf" /></Link></span> : undefined
+            this.props.showBrand ? <div className="brand"><Link to="/">Root Studio</Link></div> : undefined
           }
           <div className="toggle">
               <span className="menu-text" onClick={ () => this.toggleMenu() }>{ this.state.showMenu ? 'CLOSE' : 'MENU' }</span>

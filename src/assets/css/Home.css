@@ -42,18 +42,19 @@
 
 .home .intro-copy-wrap .name-wrap .name {
   font-size:80px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  text-shadow:
+  /*text-shadow:
     -1px -1px 0 rgba(255,255,255,0.1),
     1px -1px 0 rgba(255,255,255,0.1),
     -1px 1px 0 rgba(255,255,255,0.1),
-     1px 1px 0 rgba(255,255,255,0.1);
+     1px 1px 0 rgba(255,255,255,0.1);*/
 
   width: 90%;
   max-width:600px;
   max-height:80vh;
   color: rgba(0,0,0,0.8);
+  letter-spacing:0.05em;
   /*margin: auto;*/
 }
 
@@ -78,6 +79,19 @@
   position:relative;
   padding: 60px 0;
   margin: 0 10%;
+}
+
+
+/*********************
+*** Footer
+**********************/
+
+.home .home-footer {
+  text-align:center;
+  padding:50px 0 10px;
+  font-weight:300;
+  font-size:12px;
+  color:#888;
 }
 
 /*********************
