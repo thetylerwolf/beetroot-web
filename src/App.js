@@ -10,7 +10,7 @@ import Home from './components/Home'
 import About from './components/About'
 import ViewPortfolioPiece from './components/ViewPortfolioPiece'
 
-ReactGA.initialize('UA-37325539-1')
+ReactGA.initialize('UA-112854595-1')
 
 export default class App extends Component {
 
