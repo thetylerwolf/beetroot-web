@@ -3,7 +3,7 @@ import ScrollWatcher from '../assets/js/ScrollWatcher'
 import Typed from 'typed.js'
 
 import HeaderNav from './HeaderNav'
-import PreviousWork from './PreviousWork'
+// import PreviousWork from './PreviousWork'
 import About from './About'
 
 import SparkleBall from '../assets/js/SparkleBall'
