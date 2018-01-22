@@ -114,13 +114,13 @@ export default class Home extends Component {
           <About></About>
 
         </div>
-
+{/*
         <div className="home-recent-work-wrap">
 
           <PreviousWork></PreviousWork>
 
         </div>
-
+*/}
         <footer class="home-footer">
           <div>Copyright 2018 Root Studio</div>
         </footer>

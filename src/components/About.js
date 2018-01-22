@@ -52,9 +52,10 @@ export default class About extends Component {
 
               <ul className="services-list">
                 <li>Product Roadmapping</li>
-                <li>Technology Roadmapping</li>
                 <li>User Research</li>
                 <li>Market Research</li>
+                <li>Digital Marketing</li>
+                <li>Data Analysis</li>
               </ul>
 
             </Col>
@@ -67,7 +68,8 @@ export default class About extends Component {
                 <li>User Experience</li>
                 <li>Responsive Homepages</li>
                 <li>Mobile</li>
-                <li>Wearables</li>
+                <li>Data Visualization</li>
+                <li>Innovation Design</li>
               </ul>
 
             </Col>
@@ -77,6 +79,7 @@ export default class About extends Component {
               <h3 className="services-title">Technology</h3>
 
               <ul className="services-list">
+                <li>Technology Roadmapping</li>
                 <li>Product Development</li>
                 <li>Creative Code</li>
                 <li>Mobile Apps</li>
