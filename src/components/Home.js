@@ -7,7 +7,6 @@ import HeaderNav from './HeaderNav'
 import About from './About'
 
 import SparkleBall from '../assets/js/SparkleBall'
-import '../assets/css/Home.css'
 
 let scrollWatcher = new ScrollWatcher()
 
@@ -55,12 +54,12 @@ export default class Home extends Component {
   onScrollEnd(e) {
     if(window.scrollY > window.innerHeight) {
 
-      this.sb.stopAnimation()
+      // this.sb.stopAnimation()
       this.setState({ showBrand: true })
 
     } else {
 
-      this.sb.startAnimation()
+      // this.sb.startAnimation()
       this.setState({ showBrand: false })
 
     }
@@ -80,14 +79,14 @@ export default class Home extends Component {
 
     return (
 
-      <div className="home">
+      <div className="home" id="home">
 
         <HeaderNav
-          onShow={ () => this.sb.stopAnimation() }
-          onHide={ () => {
-            if(window.scrollY < window.innerHeight)
-              this.sb.startAnimation()
-          }}
+          // onShow={ () => this.sb.stopAnimation() }
+          // onHide={ () => {
+          //   if(window.scrollY < window.innerHeight)
+          //     this.sb.startAnimation()
+          // }}
           showBrand={ this.state.showBrand }
           location={ this.props.location }
         />
@@ -109,19 +108,19 @@ export default class Home extends Component {
 
         </div>
 
-        <div className="home-about-wrap">
+        <div id="about" className="home-about-wrap">
 
           <About></About>
 
         </div>
 {/*
-        <div className="home-recent-work-wrap">
+        <div id="work" className="home-recent-work-wrap">
 
           <PreviousWork></PreviousWork>
 
         </div>
 */}
-        <footer class="home-footer">
+        <footer id="footer" className="home-footer">
           <div>Copyright 2018 Root Studio</div>
         </footer>
 

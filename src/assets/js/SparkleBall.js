@@ -6,7 +6,7 @@ export default class SparkleBall {
         if(id) this.id = id
 
         this.onWindowResize = function() {
-            let width = window.innerWidth - 15
+            let width = window.innerWidth
 
             this.camera.aspect = width / window.innerHeight
             this.camera.updateProjectionMatrix()
@@ -28,7 +28,7 @@ export default class SparkleBall {
     }
 
     init( canvasId, wrapperClassName ) {
-        let width = window.innerWidth - 15
+        let width = window.innerWidth
 
         this.camera = new THREE.PerspectiveCamera( 27, width / window.innerHeight, 1, 3500 );
         this.camera.position.z = 0;
@@ -178,12 +178,13 @@ export default class SparkleBall {
 
         window.addEventListener( 'resize', this.onWindowResize, false );
 
-        if(wrapperClassName) {
-            this.wrapper = document.getElementsByClassName( wrapperClassName )[0]
-            this.wrapper.addEventListener( 'mousemove', this.onMouseMove, false)
-        } else {
-            this.canvas.addEventListener( 'mousemove', this.onMouseMove, false)
-        }
+        // if(wrapperClassName) {
+        //     this.wrapper = document.getElementsByClassName( wrapperClassName )[0]
+        //     this.wrapper.addEventListener( 'mousemove', this.onMouseMove, false)
+        // } else {
+        //     this.canvas.addEventListener( 'mousemove', this.onMouseMove, false)
+        // }
+        window.addEventListener( 'mousemove', this.onMouseMove, false)
 
         this.startAnimation()
         this.animate()
@@ -211,11 +212,12 @@ export default class SparkleBall {
 
     remove() {
         this.animating = false
-        if(this.wrapper) {
-            this.wrapper.removeEventListener( 'mousemove', this.onMouseMove, false)
-        } else {
-            this.canvas.removeEventListener( 'mousemove', this.onMouseMove, false)
-        }
+        // if(this.wrapper) {
+        //     this.wrapper.removeEventListener( 'mousemove', this.onMouseMove, false)
+        // } else {
+        //     this.canvas.removeEventListener( 'mousemove', this.onMouseMove, false)
+        // }
+        window.removeEventListener( 'mousemove', this.onMouseMove, false)
         window.removeEventListener( 'resize', this.onWindowResize, false );
     }
 

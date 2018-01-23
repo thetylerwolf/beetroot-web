@@ -21,5 +21,11 @@ h4.section-header {
 }
 
 .content-section {
-  margin-top:50px;
+  margin-top:30px;
 }
+
+@import "About.css";
+@import "HeaderNav.css";
+@import "Home.css";
+@import "PreviousWork.css";
+@import "ViewPortfolioPiece.css";

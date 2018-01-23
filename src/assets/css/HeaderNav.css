@@ -5,12 +5,11 @@
 .header-nav {
     position:fixed;
     height:55px;
-    box-sizing: border-box;
     width:100%;
     top:0;
     left:0;
     right:0;
-    padding:10px 10px 0 10px;
+    padding:10px 10px 0;
     z-index:1000;
     pointer-events:none;
 }
@@ -20,8 +19,11 @@
     top:0;
     left:0;
     pointer-events:auto;
-    font-size:20px;
-    padding: 23px 36px;
+    font-size:16px;
+    padding: 16px 36px;
+    opacity:1;
+
+    transition: opacity 0.3s;
 }
 
 .brand a {
@@ -32,8 +34,8 @@
     letter-spacing:0.05em;
 }
 
-#logo {
-    height:40px;
+.brand.hidden {
+    opacity:0;
 }
 
 .toggle {
@@ -46,15 +48,18 @@
 
 .toggle span {
     position:absolute;
-    top: 0;
-    right: 0;
-    padding: 27px 26px;
+    right:36px;
+    top:27px;
     letter-spacing: 3.2px;
     font-weight:700;
 }
 
 .toggle .menu-text {
     font-size:14px;
+}
+
+.light .toggle .menu-text {
+    color:#fff;
 }
 
 /*********************
@@ -73,37 +78,54 @@
 *** Full Menu section
 **********************/
 
-.full-menu {
+.header-wrap .full-menu {
     position:fixed;
     top:-120%;
     left:0;
     height:100vh;
     width:100%;
-    background-color:#fff;
+    background-color:rgba(0,0,0,0.9);
     z-index:999;
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
 
     transition: top 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-.full-menu.active {
+.header-wrap.active .full-menu {
     top:0%;
 
     transition: top 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
+.header-wrap.active .toggle .menu-text {
+    color:#fff;
+}
+
 .menu-link {
-    position:absolute;
+    /*position:absolute;*/
+    display:block;
     font-size:48px;
     font-weight:900;
-    color:#1a1a1a;
+    color:#fff;
     text-decoration:none;
+    margin-bottom:1em;
 }
 
-.menu-link {
-
+.menu-link.selected {
+    color:#888;
+    pointer-events:none;
+    cursor:pointer;
 }
 
-.menu-link.home {
+.menu-link:hover {
+    color:#888;
+}
+
+/*.menu-link.home {
     top:25%;
     left:25%;
 }
@@ -116,4 +138,15 @@
 .menu-link.contact {
     bottom:33%;
     left:35%;
+}
+*/
+
+@media print {
+    .header-wrap .full-menu {
+        display:none;
+    }
+
+    .header-wrap .toggle {
+        display:none;
+    }
 }

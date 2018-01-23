@@ -3,7 +3,9 @@
 }
 
 .about-section {
-  padding-bottom:50px;
+  padding: 0 0 70px;
+  margin-bottom: 80px;
+  background-color:#fff;
 }
 
 .about-section p {

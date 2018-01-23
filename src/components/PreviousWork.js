@@ -6,8 +6,6 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import portfolio from '../assets/js/portfolio.js'
 
-import '../assets/css/PreviousWork.css'
-
 export default class PreviousWork extends Component {
 
   render() {

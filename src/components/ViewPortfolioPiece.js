@@ -4,7 +4,6 @@ import FontAwesome from 'react-fontawesome'
 
 import HeaderNav from './HeaderNav'
 import portfolioPages from './PortfolioPages'
-import '../assets/css/ViewPortfolioPiece.css'
 
 export default class ViewPortfolioPiece extends Component {
   constructor(props) {
