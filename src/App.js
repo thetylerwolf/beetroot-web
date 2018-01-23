@@ -7,7 +7,7 @@ import ScrollToTop from './components/ScrollToTop'
 import ReactGA from 'react-ga'
 
 import Home from './components/Home'
-import About from './components/About'
+// import About from './components/About'
 // import ViewPortfolioPiece from './components/ViewPortfolioPiece'
 
 ReactGA.initialize('UA-112854595-1')
