@@ -27,7 +27,7 @@ export default class About extends Component {
             <Col xs={ 10 }>
               <p className="section-description">
                 Success in todays digital world requires businesses to focus on the user
-                and address their needs. Root Studio designs and builds the great experiences
+                and address their needs. Beetroot designs and builds the great experiences
                 that attract and retain users, making your business indispensible in their eyes.
                 We do this by leveraging our experience building powerful software,
                 designing impactful experiences and establishing effective operational processes.

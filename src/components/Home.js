@@ -37,11 +37,11 @@ export default class Home extends Component {
     new Typed(this.refs.name1, {
         ...options,
         startDelay: 3000,
-        strings: [ 'Root' ],
+        strings: [ 'Beetroot' ],
         onComplete: ( self ) => {
           new Typed( this.refs.name2, {
             ...options,
-            strings: [ 'Studio' ]
+            strings: [ 'A Product Studio' ]
           })
         }
     })
@@ -100,7 +100,7 @@ export default class Home extends Component {
             <div className="name-wrap">
               <span className="name" ref="name1"></span>
               <br/>
-              <span className="name" ref="name2"></span>
+              <span className="name small" ref="name2"></span>
             </div>
 
           </div>
@@ -121,7 +121,7 @@ export default class Home extends Component {
         </div>
 */}
         <footer id="footer" className="home-footer">
-          <div>Copyright 2018 Root Studio</div>
+          <div>Copyright 2018 Beetroot</div>
         </footer>
 
       </div>

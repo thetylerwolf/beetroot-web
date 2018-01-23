@@ -34,7 +34,7 @@ export default class SparkleBall {
         this.camera.position.z = 0;
         this.scene = new THREE.Scene();
         this.scene.background = new THREE.Color( 0xffffff );
-        this.scene.fog = new THREE.Fog( 0x44ff44, 2000, 3500 );
+        this.scene.fog = new THREE.Fog( 0xff4444, 2000, 3500 );
 
         var light1 = new THREE.DirectionalLight( 0xffffff, 0.5 );
         light1.position.set( 1, 1, 1 );
@@ -54,7 +54,7 @@ export default class SparkleBall {
         var color = new THREE.Color();
 
         var n = 800, n2 = n/2;  // triangles spread in the cube
-        var d = 12, d2 = d/2;   // individual triangle size
+        var d = 18, d2 = d/2;   // individual triangle size
 
         var pA = new THREE.Vector3();
         var pB = new THREE.Vector3();
@@ -65,14 +65,23 @@ export default class SparkleBall {
 
         for ( var i = 0; i < positions.length; i += 9 ) {
             let x, y, z, v
+
+            let t = 0.7 + Math.random() * (Math.PI - 0.7)
+
+            let xMax = 25 * 16 * Math.pow(Math.sin(t), 3)
+
+            y = 50 + 25*(13*Math.cos(t) - 5 * Math.cos(2*t) - 2*Math.cos(3*t) - Math.cos(4*t))
+
+            // y = Math.random() * n - n/2;
+
             do {
                 // positions
-                x = Math.random() * n - n2;
-                y = Math.random() * n - n2;
-                z = Math.random() * n - n2;
+                x = Math.random() * 2*xMax - xMax;
+                z = Math.random() * 2*xMax - xMax;
+
                 v = new THREE.Vector3( x, y, z )
 
-            } while( v.distanceTo(new THREE.Vector3( 0, 0, 0)) > n/2 )
+            } while( v.distanceTo(new THREE.Vector3( 0, y, 0)) > xMax )
 
             var ax = x + Math.random() * d - d2;
             var ay = y + Math.random() * d - d2;
@@ -126,7 +135,8 @@ export default class SparkleBall {
             // var vz = ( z / n ) + 0.5;
 
             // color.setRGB( vx, vy, vz );
-            color.setRGB( 0.3, 1, 3 );
+            // color.setRGB( 0.3, 1, 3 );
+            color.setHex(0x7A1F3D)
 
             colors[ i ]     = color.r;
             colors[ i + 1 ] = color.g;

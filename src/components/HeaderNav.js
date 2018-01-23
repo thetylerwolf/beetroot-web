@@ -68,8 +68,7 @@ export default class HeaderNav extends Component {
         <header className="header-nav">
 
           <span className={ `brand ${ !this.props.showBrand ? 'hidden' : '' }` }><Link to="/" className={ this.props.light ? '' : 'white' }>
-            <div>Root</div>
-            <div>Studio</div>
+            <div>Beetroot</div>
           </Link></span>
 
           <div className="toggle">
