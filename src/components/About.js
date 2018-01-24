@@ -112,7 +112,7 @@ export default class About extends Component {
           <Row around="xs">
             <Col xs={ 10 }>
               <p className="section-description">For inquiries, contact us at</p>
-              <p className="email"><a href="mailto:hello@beet-root.co">hello@beet-root.co</a></p>
+              <p className="email"><a href="mailto:hello@beetroot.digital">hello@beetroot.digital</a></p>
             </Col>
           </Row>
 
