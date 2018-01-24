@@ -53,7 +53,7 @@ export default class SparkleBall {
         var colors = new Float32Array( triangles * 3 * 3 );
         var color = new THREE.Color();
 
-        var n = 800, n2 = n/2;  // triangles spread in the cube
+        //var n = 800, n2 = n/2;  // triangles spread in the cube
         var d = 18, d2 = d/2;   // individual triangle size
 
         var pA = new THREE.Vector3();

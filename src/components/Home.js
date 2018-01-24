@@ -41,7 +41,7 @@ export default class Home extends Component {
         onComplete: ( self ) => {
           new Typed( this.refs.name2, {
             ...options,
-            strings: [ 'A Product Studio' ]
+            strings: [ 'Digital' ]
           })
         }
     })

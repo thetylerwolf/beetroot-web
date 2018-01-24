@@ -22,6 +22,7 @@ h4.section-header {
 
 .content-section {
   margin-top:30px;
+  padding-top:30px;
 }
 
 @import "About.css";
