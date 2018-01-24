@@ -15,7 +15,8 @@ export default class Home extends Component {
     super()
 
     this.state = {
-      showBrand: false
+      showBrand: false,
+      showDigital: false,
     }
 
     this.sb = new SparkleBall()
@@ -39,10 +40,7 @@ export default class Home extends Component {
         startDelay: 3000,
         strings: [ 'Beetroot' ],
         onComplete: ( self ) => {
-          new Typed( this.refs.name2, {
-            ...options,
-            strings: [ 'Digital' ]
-          })
+          this.setState({ showDigital: true })
         }
     })
 
@@ -100,7 +98,7 @@ export default class Home extends Component {
             <div className="name-wrap">
               <span className="name" ref="name1"></span>
               <br/>
-              <span className="name small" ref="name2"></span>
+              <span className={ `name small ${ this.state.showDigital ? '' : 'hidden' }` } ref="name2">Digital</span>
             </div>
 
           </div>
