@@ -30,6 +30,12 @@
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+    <script>
+      var host = /beetroot\.digital/;
+      if ((host.test(window.location.host)) && (window.location.protocol != 'https:')) {
+        window.location = window.location.toString().replace(/^http:/, "https:");
+      }
+    </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -42,11 +48,5 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
-  <script>
-    var host = /beetroot\.digital/;
-    if ((host.test(window.location.host)) && (window.location.protocol != 'https:')) {
-      window.location = window.location.toString().replace(/^http:/, "https:");
-    }
-  </script>
 
 </html>
