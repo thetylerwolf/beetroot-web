@@ -18,6 +18,7 @@ pages:
     - CI=true npm run build
     - rm -rf public
     - mv build public
+    - mv .well-known public/
   artifacts:
     paths:
       - public # GitLab pages serve from a 'public' directory
