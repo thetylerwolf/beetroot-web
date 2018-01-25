@@ -85,9 +85,9 @@ export default class About extends Component {
 
                   <ul className="services-list">
                     <li>Technology Roadmapping</li>
-                    <li>Product Development</li>
+                    <li>Mobile and Web Apps</li>
                     <li>Creative Code</li>
-                    <li>Mobile Apps</li>
+                    <li>Blockchain Apps</li>
                     <li>AR/VR</li>
                   </ul>
 
