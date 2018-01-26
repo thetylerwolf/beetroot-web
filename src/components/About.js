@@ -26,10 +26,10 @@ export default class About extends Component {
           <Row around="xs">
             <Col xs={ 10 }>
               <p className="section-description">
-                Success in todays digital world requires businesses to focus on the user
-                and address their needs. Beetroot designs and builds the great experiences
+                Success in todays digital environment requires businesses to focus on the user
+                and address their needs first. Beetroot designs and builds digital experiences
                 that attract and retain users, making your business indispensible in their eyes.
-                We do this by leveraging our experience building powerful software,
+                We do this by leveraging our past work building powerful software,
                 designing impactful experiences and establishing effective operational processes.
                 The end result is a product that resonates with your core business.
               </p>
@@ -85,10 +85,10 @@ export default class About extends Component {
 
                   <ul className="services-list">
                     <li>Technology Roadmapping</li>
-                    <li>Mobile and Web Apps</li>
+                    <li>AR/VR Apps</li>
                     <li>Creative Code</li>
                     <li>Blockchain Apps</li>
-                    <li>AR/VR</li>
+                    <li>Web & Mobile Apps</li>
                   </ul>
 
                 </Col>
