@@ -36,6 +36,23 @@ export default class About extends Component {
             </Col>
           </Row>
 
+          <Row around="xs">
+            <Col xs={ 10 }>
+              <h3 className="section-header">Blockchain Applications</h3>
+            </Col>
+          </Row>
+
+          <Row around="xs">
+            <Col xs={ 10 }>
+              <p className="section-description">
+                Beetroot brings years of experience working on blockchain-based applications.
+                This includes distributed applications (dApps), smart contracts and traditional
+                web and mobile apps that interact with a blockchain. We provide both app development
+                and generalized consulting on Blockchain applications.
+              </p>
+            </Col>
+          </Row>
+
         </Grid>
 
         <Grid fluid className="about-section">

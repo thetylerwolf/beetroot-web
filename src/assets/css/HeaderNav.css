@@ -123,7 +123,7 @@
 }
 
 .menu-link:hover {
-    color:#888;
+    color: rgba(255,255,255,0.6);
 }
 
 /*.menu-link.home {
