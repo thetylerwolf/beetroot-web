@@ -43,8 +43,9 @@ export default class SparkleBall {
         var light2 = new THREE.DirectionalLight( 0xffffff, 1.5 );
         light2.position.set( 0, -1, 0 );
         this.scene.add( light2 );
-        //
+
         var triangles = 160000;
+        var xRadius = 25 * 16;
 
         var geometry = new THREE.BufferGeometry();
 
@@ -68,7 +69,7 @@ export default class SparkleBall {
 
             let t = 0.7 + Math.random() * (Math.PI - 0.7)
 
-            let xMax = 25 * 16 * Math.pow(Math.sin(t), 3)
+            let xMax = xRadius * Math.pow(Math.sin(t), 3)
 
             y = 50 + 25*(13*Math.cos(t) - 5 * Math.cos(2*t) - 2*Math.cos(3*t) - Math.cos(4*t))
 
@@ -164,7 +165,7 @@ export default class SparkleBall {
         this.mesh = new THREE.Mesh( geometry, material );
 
         this.scene.add( this.mesh );
-        //
+
         this.renderer = new THREE.WebGLRenderer( { antialias: false } );
         this.renderer.setPixelRatio( window.devicePixelRatio );
         this.renderer.setSize( width, window.innerHeight );
@@ -179,7 +180,7 @@ export default class SparkleBall {
 
         new TWEEN.Tween(coords)
             .delay( 1000 )
-            .to({ z: 2000 }, 30000)
+            .to({ z: 2000 }, 11000)
             .easing(TWEEN.Easing.Quadratic.InOut)
             .onUpdate(() => {
                 this.camera.position.z = coords.z
