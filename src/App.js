@@ -13,6 +13,7 @@ import Home from './components/Home'
 // import ViewPortfolioPiece from './components/ViewPortfolioPiece'
 
 ReactGA.initialize('UA-112854595-1')
+ReactGA.pageview(window.location.pathname)
 
 const history = createHistory()
 history.listen((location, action) => {
