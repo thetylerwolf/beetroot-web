@@ -12,7 +12,7 @@ import Home from './components/Home'
 // import About from './components/About'
 // import ViewPortfolioPiece from './components/ViewPortfolioPiece'
 
-ReactGA.initialize('UA-112854595-1', {debug: true})
+ReactGA.initialize('UA-112854595-1')
 ReactGA.set({ page: window.location.pathname })
 ReactGA.pageview( window.location.pathname)
 
