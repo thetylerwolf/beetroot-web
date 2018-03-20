@@ -12,16 +12,16 @@ import Home from './components/Home'
 // import About from './components/About'
 // import ViewPortfolioPiece from './components/ViewPortfolioPiece'
 
-ReactGA.initialize('UA-112854595-1')
-ReactGA.set({ page: window.location.pathname })
-ReactGA.pageview( window.location.pathname)
+// ReactGA.initialize('UA-112854595-1')
+// ReactGA.set({ page: window.location.pathname })
+// ReactGA.pageview( window.location.pathname)
 
-const history = createHistory()
-history.listen((location, action) => {
-  ReactGA.set({ page: location.hash })
-  ReactGA.pageview(location.pathname + location.hash)
-  console.log(location.pathname + location.hash)
-})
+// const history = createHistory()
+// history.listen((location, action) => {
+//   ReactGA.set({ page: location.hash })
+//   ReactGA.pageview(location.pathname + location.hash)
+//   console.log(location.pathname + location.hash)
+// })
 
 
 export default class App extends Component {
