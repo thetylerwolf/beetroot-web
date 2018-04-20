@@ -51,7 +51,7 @@ export default class About extends Component {
                 web and mobile apps that interact with a blockchain. We provide both app development
                 and generalized consulting on Blockchain applications.
               </p>
-              <Link to="/blockchain" className="invisible">Learn More</Link>
+              {/*<Link to="/blockchain" className="invisible">Learn More</Link>*/}
             </Col>
           </Row>
         {/*
