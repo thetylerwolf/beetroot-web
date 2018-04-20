@@ -32,8 +32,8 @@ export default class App extends Component {
       <Router history={ history }>
         <ScrollToTop>
           <main>
-            <Route exact path="/" component={ Home }/>
             <Route path="/blockchain" component={ BlockchainHome }/>
+            <Route exact path="/" component={ Home }/>
             {/* <Route path="/about" component={ About }/> */}
             {/* <Route path="/works/:id" component={ ViewPortfolioPiece }/> */}
           </main>

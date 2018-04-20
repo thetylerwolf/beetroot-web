@@ -13,7 +13,7 @@ import {
 export default class Blockchain extends Component {
 
   render() {
-    console.log('rendering', Link)
+
     return (
 
       <div>
