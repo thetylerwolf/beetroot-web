@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Link } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
 export default class Blockchain extends Component {
@@ -22,9 +22,9 @@ export default class Blockchain extends Component {
 
               <Row around="xs">
 
-                <a href="https://goo.gl/forms/BRK7pWwxDubFdd6r1" target="_blank">
+                <Link href="https://goo.gl/forms/BRK7pWwxDubFdd6r1" target="_blank">
                   <button className="cta">Contact us now</button>
-                </a>
+                </Link>
 
               </Row>
 
@@ -75,9 +75,9 @@ export default class Blockchain extends Component {
 
               <Row around="xs">
 
-                <a href="https://goo.gl/forms/BRK7pWwxDubFdd6r1" target="_blank">
+                <Link href="https://goo.gl/forms/BRK7pWwxDubFdd6r1" target="_blank">
                   <button className="cta">Contact us now</button>
-                </a>
+                </Link>
 
               </Row>
 
@@ -120,9 +120,9 @@ export default class Blockchain extends Component {
 
               <Row around="xs">
 
-                <a href="https://goo.gl/forms/BRK7pWwxDubFdd6r1" target="_blank">
+                <Link href="https://goo.gl/forms/BRK7pWwxDubFdd6r1" target="_blank">
                   <button className="cta">Contact us now</button>
-                </a>
+                </Link>
 
               </Row>
 
