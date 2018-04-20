@@ -52,7 +52,7 @@ export default class About extends Component {
               </p>
             </Col>
           </Row>
-
+        {/*
           <Row around="xs">
             <Col xs={ 10 }>
               <p className="section-description">
@@ -60,6 +60,7 @@ export default class About extends Component {
               </p>
             </Col>
           </Row>
+        */}
 
         </Grid>
 

@@ -61,7 +61,7 @@ export default class HeaderNav extends Component {
 
         <div className="full-menu" >
           <Link className="menu-link home" to="/#home" onClick={ (e) => { this.toggleMenu(e); hashLinkScroll() } }><span>Home</span></Link>
-          <Link className="menu-link blockchain" to="/blockchain"><span>Blockchain</span></Link>
+          {/* <Link className="menu-link blockchain" to="/blockchain"><span>Blockchain</span></Link> */}
           <Link className="menu-link about" to="/#about" onClick={ (e) => { this.toggleMenu(e); hashLinkScroll() } }><span>About</span></Link>
           <Link className="menu-link contact" to="/#contact" onClick={ (e) => { this.toggleMenu(e); hashLinkScroll() } }><span>Contact</span></Link>
         </div>
