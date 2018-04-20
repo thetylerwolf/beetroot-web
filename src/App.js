@@ -33,7 +33,7 @@ export default class App extends Component {
         <ScrollToTop>
           <main>
             <Route exact path="/" component={ Home }/>
-            <Route exact path="/blockchain" component={ BlockchainHome }/>
+            <Route path="/blockchain" component={ BlockchainHome }/>
             {/* <Route path="/about" component={ About }/> */}
             {/* <Route path="/works/:id" component={ ViewPortfolioPiece }/> */}
           </main>

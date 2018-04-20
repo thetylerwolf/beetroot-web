@@ -1,10 +1,19 @@
-import React, { Component, Link } from 'react'
-import { Grid, Row, Col } from 'react-flexbox-grid'
+import React, {
+  Component,
+} from 'react'
+import {
+  Link
+} from 'react-router-dom'
+import {
+  Grid,
+  Row,
+  Col
+} from 'react-flexbox-grid'
 
 export default class Blockchain extends Component {
 
   render() {
-
+    console.log('rendering', Link)
     return (
 
       <div>
@@ -22,7 +31,7 @@ export default class Blockchain extends Component {
 
               <Row around="xs">
 
-                <Link href="https://goo.gl/forms/BRK7pWwxDubFdd6r1" target="_blank">
+                <Link to="https://goo.gl/forms/BRK7pWwxDubFdd6r1" target="_blank">
                   <button className="cta">Contact us now</button>
                 </Link>
 
@@ -75,7 +84,7 @@ export default class Blockchain extends Component {
 
               <Row around="xs">
 
-                <Link href="https://goo.gl/forms/BRK7pWwxDubFdd6r1" target="_blank">
+                <Link to="https://goo.gl/forms/BRK7pWwxDubFdd6r1" target="_blank">
                   <button className="cta">Contact us now</button>
                 </Link>
 
@@ -120,7 +129,7 @@ export default class Blockchain extends Component {
 
               <Row around="xs">
 
-                <Link href="https://goo.gl/forms/BRK7pWwxDubFdd6r1" target="_blank">
+                <Link to="https://goo.gl/forms/BRK7pWwxDubFdd6r1" target="_blank">
                   <button className="cta">Contact us now</button>
                 </Link>
 
