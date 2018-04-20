@@ -1,0 +1,7 @@
+svg text {
+  font-family: sans-serif;
+}
+
+svg text.current-text {
+  font-size:12px;
+}

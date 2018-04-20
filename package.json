@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@tweenjs/tween.js": "^17.1.1",
+    "d3": "^5.0.0",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.3",
     "react-dom": "^16.0.0",
@@ -13,6 +14,7 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
     "three": "^0.87.1",
+    "topojson": "^3.0.2",
     "tween.js": "^16.6.0",
     "typed.js": "^2.0.6"
   },
