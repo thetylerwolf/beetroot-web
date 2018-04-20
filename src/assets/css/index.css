@@ -39,6 +39,10 @@ button.cta {
   cursor: pointer;
 }
 
+.invisible {
+  color:#fff !important;
+}
+
 @import "About.css";
 @import "HeaderNav.css";
 @import "Home.css";

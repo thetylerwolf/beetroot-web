@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+import { Link } from 'react-router-dom'
 
 export default class About extends Component {
 
@@ -50,6 +51,7 @@ export default class About extends Component {
                 web and mobile apps that interact with a blockchain. We provide both app development
                 and generalized consulting on Blockchain applications.
               </p>
+              <Link to="/blockchain" className="invisible">Learn More</Link>
             </Col>
           </Row>
         {/*
