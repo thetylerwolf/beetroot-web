@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import {
   Router,
-  Route
+  Route,
+  Switch,
 } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 
@@ -32,10 +33,13 @@ export default class App extends Component {
       <Router history={ history }>
         <ScrollToTop>
           <main>
-            <Route path="/blockchain" component={ BlockchainHome }/>
-            <Route exact path="/" component={ Home }/>
-            {/* <Route path="/about" component={ About }/> */}
-            {/* <Route path="/works/:id" component={ ViewPortfolioPiece }/> */}
+            <Switch location={ this.props.location }>
+              <Route exact path="/" component={ Home }/>
+              <Route exact path="/home" component={ Home }/>
+              <Route path="/blockchain" component={ BlockchainHome }/>
+              {/* <Route path="/about" component={ About }/> */}
+              {/* <Route path="/works/:id" component={ ViewPortfolioPiece }/> */}
+            </Switch>
           </main>
         </ScrollToTop>
       </Router>
