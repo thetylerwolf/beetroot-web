@@ -1,0 +1,144 @@
+.content {
+  position:relative;
+}
+
+.content .intro-section {
+  position:relative;
+  /*height:100vh;*/
+  /*display: flex;
+  flex-direction:column;
+  align-items: left;
+  justify-content:center;*/
+}
+
+.content #content-canvas-wrap {
+  position:fixed;
+  overflow:hidden;
+  top:0;
+  left:0;
+  z-index:-100;
+}
+
+.content .intro-section canvas {
+  position:relative;
+  top:0;
+  left:0;
+  right:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+.content .intro-copy-wrap {
+  position:absolute;
+  top:0;
+  left:0;
+  height:100vh;
+  width:100%;
+  /*text-align:center;*/
+  pointer-events:none;
+  flex:none;
+}
+
+.content .intro-copy-wrap .name-wrap {
+  position:absolute;
+  max-width:900px;
+  bottom:25px;
+  left:5%;
+  text-align:right;
+}
+
+.content .intro-copy-wrap .name-wrap .name {
+  font-size:80px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  /*text-shadow:
+    -1px -1px 0 rgba(255,255,255,0.1),
+    1px -1px 0 rgba(255,255,255,0.1),
+    -1px 1px 0 rgba(255,255,255,0.1),
+     1px 1px 0 rgba(255,255,255,0.1);*/
+
+  width: 90%;
+  max-width:600px;
+  max-height:80vh;
+  color: rgba(0,0,0,0.8);
+  letter-spacing:0.05em;
+  opacity: 1;
+  /*margin: auto;*/
+  transition:opacity 0.5s;
+}
+
+
+
+.content .intro-copy-wrap .name-wrap .name.small {
+  font-size:30px;
+  font-weight:300;
+}
+
+.content .intro-copy-wrap .services-copy {
+  font-size:36px;
+  font-weight:700;
+  margin-top:3%;
+  text-shadow: 0 0 1px #eee;
+  padding:2%;
+}
+
+.content .cta-section {
+  padding: 0 0 20px;
+  margin-bottom: 80px;
+  background-color:#fff;
+}
+
+/*********************
+*** Portfolio section
+**********************/
+
+.content .content-portfolio-wrap {
+  position:relative;
+  padding-top:100px;
+}
+
+.content .content-portfolio-wrap .piece-row {
+  position:relative;
+  padding: 60px 0;
+  margin: 0 10%;
+}
+
+/*********************
+*** About Section
+**********************/
+.content .content-about-wrap {
+  /*margin-top:calc(100vh + 150px);*/
+  margin-top:150px;
+}
+
+/*********************
+*** Footer
+**********************/
+
+.content .content-footer {
+  text-align:center;
+  padding:10px 0 10px;
+  font-weight:300;
+  font-size:12px;
+  color:#888;
+  background-color:#fff;
+}
+
+/*********************
+*** Responsive
+**********************/
+
+@media only screen and (max-width : 480px) {
+
+
+  /*********************
+  *** content section
+  **********************/
+
+  .content .intro-copy-wrap .name-wrap .name {
+    margin: 25% 0 0 -4%;
+    width: 80%;
+  }
+
+}

@@ -27,8 +27,10 @@ export default class SparkleBall {
 
     }
 
-    init( canvasId, wrapperClassName ) {
+    init( canvasId, introAnimation=true ) {
         let width = window.innerWidth
+
+        this.introAnimation = introAnimation
 
         this.camera = new THREE.PerspectiveCamera( 27, width / window.innerHeight, 1, 3500 );
         this.camera.position.z = 0;
@@ -176,16 +178,20 @@ export default class SparkleBall {
         this.canvas.appendChild( this.renderer.domElement );
         //
 
-        let coords = { z: 0 }
+        if(this.introAnimation) {
+            let coords = { z: 0 }
 
-        new TWEEN.Tween(coords)
-            .delay( 1000 )
-            .to({ z: 2000 }, 11000)
-            .easing(TWEEN.Easing.Quadratic.InOut)
-            .onUpdate(() => {
-                this.camera.position.z = coords.z
-            })
-            .start()
+            new TWEEN.Tween(coords)
+                .delay( 1000 )
+                .to({ z: 2000 }, 11000)
+                .easing(TWEEN.Easing.Quadratic.InOut)
+                .onUpdate(() => {
+                    this.camera.position.z = coords.z
+                })
+                .start()
+        } else {
+            this.camera.position.z = 2000
+        }
 
         window.addEventListener( 'resize', this.onWindowResize, false );
 
@@ -214,7 +220,10 @@ export default class SparkleBall {
         if( !this.animating ) return
         // if(this.id) console.log(this.id)
         this.render()
-        TWEEN.update(time)
+
+        if(this.introAnimation) {
+            TWEEN.update(time)
+        }
     }
 
     render() {

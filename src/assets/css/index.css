@@ -29,8 +29,19 @@ h4.section-header {
   opacity:0 !important;
 }
 
+button.cta {
+  background-color: rgba(122, 31, 61, 1);
+  font-size: 20px;
+  padding: 15px;
+  color:#fff;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
 @import "About.css";
 @import "HeaderNav.css";
 @import "Home.css";
+@import "Content.css";
 @import "PreviousWork.css";
 @import "ViewPortfolioPiece.css";

@@ -19,19 +19,19 @@ export default class About extends Component {
 
           <Row around="xs">
             <Col xs={ 10 }>
-              <h3 className="headline">We help businesses grow by expanding and improving their digital&nbsp;experience.</h3>
+              <h3 className="headline">We help businesses grow by elevating their digital&nbsp;experience.</h3>
             </Col>
           </Row>
 
           <Row around="xs">
             <Col xs={ 10 }>
               <p className="section-description">
-                Success in todays digital environment requires businesses to focus on the user
-                and address their needs first. Beetroot designs and builds digital experiences
-                that attract and retain users, making your business indispensible in their eyes.
+                Success in todays digital environment requires a focus on the user,
+                addressing their needs first. Beetroot designs and builds digital experiences
+                that attract and retain customers, making your business indispensible in their eyes.
                 We do this by leveraging our past work building powerful software,
                 designing impactful experiences and establishing effective operational processes.
-                The end result is a product that resonates with your core business.
+                The end result is a product that turns your customers into fans.
               </p>
             </Col>
           </Row>
@@ -49,6 +49,14 @@ export default class About extends Component {
                 This includes distributed applications (dApps), smart contracts and traditional
                 web and mobile apps that interact with a blockchain. We provide both app development
                 and generalized consulting on Blockchain applications.
+              </p>
+            </Col>
+          </Row>
+
+          <Row around="xs">
+            <Col xs={ 10 }>
+              <p className="section-description">
+                Learn more on our <a href="/blockchain">Blockchain page</a>.
               </p>
             </Col>
           </Row>

@@ -9,6 +9,7 @@ import createHistory from 'history/createBrowserHistory'
 
 
 import Home from './components/Home'
+import BlockchainHome from './components/BlockchainHome'
 // import About from './components/About'
 // import ViewPortfolioPiece from './components/ViewPortfolioPiece'
 
@@ -32,6 +33,7 @@ export default class App extends Component {
         <ScrollToTop>
           <main>
             <Route exact path="/" component={ Home }/>
+            <Route exact path="/blockchain" component={ BlockchainHome }/>
             {/* <Route path="/about" component={ About }/> */}
             {/* <Route path="/works/:id" component={ ViewPortfolioPiece }/> */}
           </main>
