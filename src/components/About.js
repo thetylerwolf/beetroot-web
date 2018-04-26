@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default class About extends Component {
 
@@ -81,42 +81,36 @@ export default class About extends Component {
 
                 <Col xs={ 12 } md={ 4 }>
 
-                  <h3 className="services-title">Strategy</h3>
+                  <h3 className="services-title">Product</h3>
 
                   <ul className="services-list">
-                    <li>Product Roadmapping</li>
-                    <li>User Research</li>
-                    <li>Market Research</li>
-                    <li>Digital Marketing</li>
-                    <li>Data Analysis</li>
-                  </ul>
-
-                </Col>
-
-                <Col xs={ 12 } md={ 4 }>
-
-                  <h3 className="services-title">Design</h3>
-
-                  <ul className="services-list">
+                    <li>Product Strategy</li>
                     <li>User Experience</li>
-                    <li>Responsive Homepages</li>
-                    <li>Mobile</li>
-                    <li>Data Visualization</li>
-                    <li>Innovation Design</li>
+                    <li>Design</li>
                   </ul>
 
                 </Col>
 
                 <Col xs={ 12 } md={ 4 }>
 
-                  <h3 className="services-title">Technology</h3>
+                  <h3 className="services-title">Data Visualization</h3>
 
                   <ul className="services-list">
-                    <li>Technology Roadmapping</li>
-                    <li>AR/VR Apps</li>
-                    <li>Creative Code</li>
-                    <li>Blockchain Apps</li>
-                    <li>Web & Mobile Apps</li>
+                    <li>Data Processing</li>
+                    <li>Visualization Design</li>
+                    <li>Development</li>
+                  </ul>
+
+                </Col>
+
+                <Col xs={ 12 } md={ 4 }>
+
+                  <h3 className="services-title">Creative Technology</h3>
+
+                  <ul className="services-list">
+                    <li>3D</li>
+                    <li>AR/VR</li>
+                    <li>Creative Experiences</li>
                   </ul>
 
                 </Col>
@@ -129,18 +123,26 @@ export default class About extends Component {
 
         </Grid>
 
-        <Grid fluid className="about-section" id="contact">
+        <Grid fluid className="about-section cta-section" id="contact">
 
           <Row around="xs" className="content-section">
             <Col xs={ 10 }>
-              <h4 className="section-header">Contact</h4>
-            </Col>
-          </Row>
 
-          <Row around="xs">
-            <Col xs={ 10 }>
+              <Row around="xs">
+                <h2>Ready to get started?</h2>
+              </Row>
+
+              <Row around="xs">
+
+                <Link to="https://goo.gl/forms/FmZnVn7QxyfbXxIK2" target="_blank">
+                  <button className="cta">Contact us now</button>
+                </Link>
+
+              </Row>
+              {/*
               <p className="section-description">For inquiries, contact us at</p>
               <p className="email"><a href="mailto:hello@beetroot.digital">hello@beetroot.digital</a></p>
+              */}
             </Col>
           </Row>
 
