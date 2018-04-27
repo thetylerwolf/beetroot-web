@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /fbi_crime
+Disallow: /work/fbi_crime
