@@ -111,7 +111,7 @@ export default class CrimeViz extends Component {
 
           <div className="work-title-wrap">
 
-            <div className="work-title">US Cities</div>
+            <div className="work-title">FBI Crime data === WIP === Tyler Wolf</div>
 
           </div>
 
@@ -124,7 +124,7 @@ export default class CrimeViz extends Component {
 
               <Row>
 
-                <h3>US Cities</h3>
+                <h3>FBI Crime data === WIP === Tyler Wolf</h3>
                 <Col className="chart-container" xs={ 12 }>
                   <svg id="chart" width="900" height="500" style={{ backgroundColor: '#17253C' }}/>
                 </Col>
