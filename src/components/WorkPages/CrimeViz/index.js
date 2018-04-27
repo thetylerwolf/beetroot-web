@@ -42,7 +42,7 @@ export default class CrimeViz extends Component {
     map.draw()
 
     this.radiators = this.states.map((d,i) => {
-      if(i > 50) return
+      if(i > 50) return undefined
 
       let position = map.projection([ d.long, d.lat ])
 

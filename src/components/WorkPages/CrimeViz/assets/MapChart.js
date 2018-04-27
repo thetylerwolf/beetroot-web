@@ -53,7 +53,7 @@ export default class MapChart extends Chart {
     let width = this.settings.width - this.padding.left - this.padding.right,
       height = this.settings.height - this.padding.top - this.padding.bottom
 
-    let mapRatio = 1.72
+    // let mapRatio = 1.72
 
     let fitGeom = topojson.feature(this.topology, this.topology.objects.land)
 
