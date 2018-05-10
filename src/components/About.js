@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import { Link } from 'react-router-dom'
 
+import Clients from './Clients'
+
 export default class About extends Component {
 
   render() {
@@ -122,6 +124,8 @@ export default class About extends Component {
 
 
         </Grid>
+
+        <Clients/>
 
         <Grid fluid className="about-section cta-section" id="contact">
 

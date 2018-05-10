@@ -1,0 +1,32 @@
+.clients-section {
+  padding: 0 0 70px;
+  margin-bottom: 80px;
+  background-color: rgba(122, 31, 61, 1);
+  color:#fff;
+}
+
+.clients-section .previous-client {
+  margin:20px;
+  opacity:0.8;
+  background: center / contain no-repeat;
+}
+
+.previous-client.novus {
+  background-image: url(/client_logos/novus.png);
+  height:50px;
+}
+
+.previous-client.solidx {
+  background-image: url(/client_logos/solidx.png);
+  height:50px;
+}
+
+.previous-client.etrade {
+  background-image: url(/client_logos/etrade.png);
+  height:50px;
+}
+
+.previous-client.sungenomics {
+  background-image: url(/client_logos/sungenomics.png);
+  height:100px;
+}
