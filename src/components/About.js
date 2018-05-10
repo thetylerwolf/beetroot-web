@@ -85,8 +85,8 @@ export default class About extends Component {
 
                   <ul className="services-list">
                     <li>Product Strategy</li>
-                    <li>User Experience</li>
-                    <li>Design</li>
+                    <li>Experience Design</li>
+                    <li>Visual Design</li>
                   </ul>
 
                 </Col>
