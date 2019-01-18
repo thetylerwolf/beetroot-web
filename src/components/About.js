@@ -38,7 +38,7 @@ export default class About extends Component {
               </p>
             </Col>
           </Row>
-
+        {/*
           <Row around="xs">
             <Col xs={ 10 }>
               <h3 className="section-header">Blockchain Applications</h3>
@@ -53,9 +53,9 @@ export default class About extends Component {
                 web and mobile apps that interact with a blockchain. We provide both app development
                 and generalized consulting on Blockchain applications.
               </p>
-              {/*<Link to="/blockchain" className="invisible">Learn More</Link>*/}
             </Col>
           </Row>
+        */}
         {/*
           <Row around="xs">
             <Col xs={ 10 }>
@@ -98,7 +98,7 @@ export default class About extends Component {
                   <h3 className="services-title">Data Visualization</h3>
 
                   <ul className="services-list">
-                    <li>Data Processing</li>
+                    <li>Data Science</li>
                     <li>Visualization Design</li>
                     <li>Development</li>
                   </ul>
@@ -112,7 +112,7 @@ export default class About extends Component {
                   <ul className="services-list">
                     <li>3D</li>
                     <li>AR/VR</li>
-                    <li>Creative Experiences</li>
+                    <li>Generative Art</li>
                   </ul>
 
                 </Col>
